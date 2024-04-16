@@ -10,17 +10,24 @@
   display: flex;
   margin-bottom: 10px;
 
-  border: 2px dotted red;
+  /* border: 2px dotted red; */
+}
+
+.warning-container {
+  display: flex;
+  margin-bottom: 10px;
+
+  /* border: 2px dotted red; */
 }
 
 .input-container label {
-  flex: 1;
+  flex: 15%;
   margin-right: 10px;
 }
 
 .input-container input,
 .input-container select {
-  flex: 2;
+  flex: 85%;
 }
 
 .button-container {
@@ -39,12 +46,30 @@ th, td {
   border: 1px solid #ddd;
 }
 
+tbody tr:hover {
+  background-color: #999999;
+  cursor: pointer;
+}
+
 .even {
   background-color: #f2f2f2;
 }
 
 .odd {
   background-color: #ffffff;
+}
+
+#infoMessage_noObjectsToDisplay {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+}
+
+button {
+  font-size: 1.4em;
+}
+button:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
